@@ -1,1 +1,0 @@
-export default {version: '#2021-02-12 at 12:00pm 29.7s#'};
