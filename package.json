@@ -1,8 +1,11 @@
 {
 	"name": "@execview/themedesigner",
-	"version": "0.1.6",
+	"version": "0.1.15",
 	"main": "./transpiled/exports.js",
-	"private": false,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Execview/evn-ui-themedesigner.git"
+	},
 	"dependencies": {
 		"color-string": "^1.5.3",
 		"react": "16.11.0",
@@ -15,7 +18,7 @@
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"prepublishOnly": "npm version patch && npm install --no-save @babel/cli @babel/core @babel/preset-env @babel/plugin-proposal-class-properties @babel/preset-react && babel src -d transpiled --copy-files --plugins=@babel/plugin-proposal-class-properties --presets=@babel/preset-env,@babel/preset-react",
+		"prepublishOnly": "npm --no-git-tag-version version patch && npm install --no-save @babel/cli @babel/core @babel/preset-env @babel/plugin-proposal-class-properties @babel/preset-react && babel src -d transpiled --copy-files --plugins=@babel/plugin-proposal-class-properties --presets=@babel/preset-env,@babel/preset-react",
 		"postpublish": "rmdir /S /Q transpiled",
 		"clean": "wsl rm -rfd ./node_modules && wsl rm -rfd ./transpiled && wsl rm ./package-lock.json"
 	},
