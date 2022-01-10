@@ -5,7 +5,7 @@ import pinkTheme from './themes/pink.json'
 import blueTheme from './themes/blue.json'
 import printTheme from './themes/print.json'
 
-const module = {
+export {
 	useThemeApplier,
 	defaultTheme,
 	pinkTheme,
@@ -13,4 +13,4 @@ const module = {
 	printTheme
 }
 
-export default module
+export default useThemeApplier
