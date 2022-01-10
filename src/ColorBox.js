@@ -33,8 +33,6 @@ const ColorBox = (props) => {
 		zIndex:1
 	}
 
-
-	console.log(col)
 	return (
 		<div style={style} onClick={()=>copyToClipboard(col)} onContextMenu={(e)=>{e.preventDefault();setOpen(true)}}>
 			<div>{props.name}</div>
@@ -51,5 +49,4 @@ const copyToClipboard = (text) => {
 	console.log(text)
 	if(!navigator.clipboard){return}
 	navigator.clipboard.writeText(text)
-	console.log(text)
 }
