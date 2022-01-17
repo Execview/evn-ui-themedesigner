@@ -1,7 +1,8 @@
 import {useLayoutEffect} from 'react'
 import * as colorString from 'color-string'
 
-const useThemeApplier = (theme, element=document.getElementById('root')) => {
+const useThemeApplier = (theme, element=document.documentElement) => {
+
 	useLayoutEffect(()=>{
 		if(!theme){return}
 		Object.entries(theme).forEach(([v,c])=>{
