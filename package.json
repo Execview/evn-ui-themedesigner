@@ -1,6 +1,6 @@
 {
 	"name": "@execview/themedesigner",
-	"version": "0.1.24",
+	"version": "0.1.27",
 	"main": "./transpiled/exports.js",
 	"repository": {
 		"type": "git",
@@ -19,8 +19,8 @@
 		"test": "react-scripts test",
 		"prepublishOnly": "npm --no-git-tag-version version patch && npm run installTranspiler && npm run transpile",
 		"postpublish": "npx --yes rimraf transpiled",
-		"installTranspiler": "npm install --no-save @babel/cli @babel/preset-react @babel/plugin-syntax-import-assertions",
-		"transpile": "npx babel src -d transpiled --copy-files --presets=@babel/preset-react --plugins=@babel/plugin-syntax-import-assertions",
+		"installTranspiler": "npm install --no-save @babel/cli @babel/preset-react",
+		"transpile": "npx babel src -d transpiled --copy-files --presets=@babel/preset-react",
 		"clean": "npx --yes rimraf node_modules transpiled build package-lock.json"
 	},
 	"files": [

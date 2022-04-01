@@ -3,11 +3,11 @@ import classes from './App.module.css';
 import ColorBox from './ColorBox';
 import useThemeApplier from './useThemeApplier';
 
-import colorDescriptions from './colorDescriptions.json' assert { type: "json" } 
-import defaultTheme from './themes/default.json' assert { type: "json" }
-import pinkTheme from './themes/pink.json' assert { type: "json" }
-import blueTheme from './themes/blue.json' assert { type: "json" }
-import printTheme from './themes/print.json' assert { type: "json" }
+import colorDescriptions from './colorDescriptions.json' 
+import defaultTheme from './themes/default.json'
+import pinkTheme from './themes/pink.json'
+import blueTheme from './themes/blue.json'
+import printTheme from './themes/print.json'
 
 const App = (props) => {
 	const activeTheme = "default"
