@@ -14,7 +14,8 @@
 		"react-scripts": "5.0.0"
 	},
 	"scripts": {
-		"start": "react-scripts start",
+		"dev": "react-scripts start",
+		"start": "npm run build && npx --yes serve -s build -p 80",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"prepublishOnly": "npm --no-git-tag-version version patch && npm run installTranspiler && npm run transpile",
