@@ -1,17 +1,17 @@
 {
 	"name": "@execview/themedesigner",
-	"version": "0.1.27",
+	"version": "0.1.28",
 	"main": "./transpiled/exports.js",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Execview/evn-ui-themedesigner.git"
 	},
 	"dependencies": {
-		"color-string": "^1.9.0",
-		"react": "17.0.2",
+		"color-string": "^1.9.1",
+		"react": "18.2.0",
 		"react-color": "^2.19.3",
-		"react-dom": "17.0.2",
-		"react-scripts": "5.0.0"
+		"react-dom": "18.2.0",
+		"react-scripts": "5.0.1"
 	},
 	"scripts": {
 		"dev": "react-scripts start",
