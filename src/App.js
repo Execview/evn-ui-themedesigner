@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import classes from './App.module.css';
-import ColorBox from './ColorBox';
-import useThemeApplier from './useThemeApplier';
+import ColorBox from './ColorBox.js';
+import useThemeApplier from './useThemeApplier.js';
 
 import colorDescriptions from './colorDescriptions.json' 
 import defaultTheme from './themes/default.json'

@@ -1,4 +1,4 @@
-import useThemeApplier from './useThemeApplier'
+import useThemeApplier from './useThemeApplier.js'
 
 import defaultTheme from './themes/default.json'
 import pinkTheme from './themes/pink.json'
